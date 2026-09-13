@@ -25,10 +25,21 @@ from collections import defaultdict, deque
 from contextlib import asynccontextmanager
 from typing import AsyncIterator
 
-import anthropic
-from fastapi import FastAPI, Header, HTTPException, Request
-from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import StreamingResponse
+try:
+    import anthropic  # type: ignore[import-not-found]
+except ModuleNotFoundError:
+    anthropic = None  # type: ignore[assignment]
+try:
+    from fastapi import FastAPI, Header, HTTPException, Request  # type: ignore[import-not-found]
+    from fastapi.middleware.cors import CORSMiddleware  # type: ignore[import-not-found]
+    from fastapi.responses import StreamingResponse  # type: ignore[import-not-found]
+except ModuleNotFoundError as exc:
+    if exc.name == "fastapi":
+        raise RuntimeError(
+            "FastAPI is not installed. Install the backend dependencies with "
+            "`python -m pip install fastapi uvicorn anthropic`."
+        ) from exc
+    raise
 from pydantic import BaseModel, Field
 
 logger = logging.getLogger("nutriguide")
@@ -142,7 +153,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-client = anthropic.AsyncAnthropic()
+client = anthropic.AsyncAnthropic() if anthropic is not None else None
 
 
 class ChatTurn(BaseModel):
@@ -183,6 +194,12 @@ async def chat(
     request: Request,
     x_app_key: str | None = Header(default=None),
 ) -> StreamingResponse:
+    if client is None:
+        raise HTTPException(
+            status_code=503,
+            detail="Anthropic SDK is missing. Install it with: python -m pip install anthropic",
+        )
+
     if APP_KEY is not None and x_app_key != APP_KEY:
         raise HTTPException(status_code=401, detail="Invalid or missing app key")
 
