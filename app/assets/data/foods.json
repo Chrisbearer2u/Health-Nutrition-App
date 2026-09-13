@@ -1,0 +1,322 @@
+[
+  {
+    "id": "oats",
+    "name": "Oats (rolled or steel-cut)",
+    "kind": "food",
+    "keyNutrients": ["Beta-glucan fiber", "Magnesium", "Manganese"],
+    "supports": ["heart", "pancreas", "stomach"],
+    "notes": "Beta-glucan soluble fiber helps lower LDL cholesterol and slows glucose absorption."
+  },
+  {
+    "id": "fatty-fish",
+    "name": "Fatty fish (salmon, sardines, mackerel)",
+    "kind": "food",
+    "keyNutrients": ["Omega-3 EPA/DHA", "Vitamin D", "Protein"],
+    "supports": ["heart", "brain", "eyes", "kidney", "bones", "thyroid", "skin"],
+    "notes": "Two servings/week is the widely cited target for omega-3 intake (WHO/FAO guidance)."
+  },
+  {
+    "id": "olive-oil",
+    "name": "Extra virgin olive oil",
+    "kind": "food",
+    "keyNutrients": ["Monounsaturated fat", "Polyphenols", "Vitamin E"],
+    "supports": ["heart", "liver", "skin"],
+    "notes": "Cornerstone of the Mediterranean diet, associated with cardiovascular risk reduction."
+  },
+  {
+    "id": "berries",
+    "name": "Berries (blueberries, strawberries, blackberries)",
+    "kind": "food",
+    "keyNutrients": ["Anthocyanins", "Vitamin C", "Fiber"],
+    "supports": ["heart", "brain", "kidney", "skin"],
+    "notes": "Anthocyanins are antioxidants studied for vascular and cognitive health."
+  },
+  {
+    "id": "leafy-greens",
+    "name": "Leafy greens (spinach, kale, broccoli)",
+    "kind": "food",
+    "keyNutrients": ["Folate", "Vitamin K", "Lutein", "Nitrates"],
+    "supports": ["heart", "liver", "kidney", "pancreas", "bones", "eyes"],
+    "notes": "Dietary nitrates support healthy blood pressure; vitamin K supports bone."
+  },
+  {
+    "id": "garlic",
+    "name": "Garlic",
+    "kind": "food",
+    "keyNutrients": ["Allicin", "Sulfur compounds"],
+    "supports": ["heart", "liver", "stomach", "immune"],
+    "notes": "Allicin is studied for modest blood-pressure and lipid effects."
+  },
+  {
+    "id": "nuts",
+    "name": "Nuts (almonds, walnuts mix)",
+    "kind": "food",
+    "keyNutrients": ["Unsaturated fats", "Vitamin E", "Magnesium", "Fiber"],
+    "supports": ["heart", "pancreas", "bones", "skin"],
+    "notes": "A small daily handful is associated with reduced cardiovascular risk."
+  },
+  {
+    "id": "walnuts",
+    "name": "Walnuts",
+    "kind": "food",
+    "keyNutrients": ["ALA omega-3", "Polyphenols", "Vitamin E"],
+    "supports": ["heart", "brain"],
+    "notes": "Richest nut source of plant omega-3 (ALA); studied for cognitive support."
+  },
+  {
+    "id": "turmeric",
+    "name": "Turmeric",
+    "kind": "food",
+    "keyNutrients": ["Curcumin"],
+    "supports": ["brain", "lungs", "immune", "bones"],
+    "notes": "Curcumin is anti-inflammatory; better absorbed with black pepper (piperine)."
+  },
+  {
+    "id": "eggs",
+    "name": "Eggs",
+    "kind": "food",
+    "keyNutrients": ["Choline", "Lutein", "Complete protein", "Vitamin D"],
+    "supports": ["brain", "bones", "eyes", "thyroid"],
+    "notes": "Choline supports brain cell membranes; yolks carry lutein for eye health."
+  },
+  {
+    "id": "dark-chocolate",
+    "name": "Dark chocolate (70%+ cocoa)",
+    "kind": "food",
+    "keyNutrients": ["Flavanols", "Magnesium", "Iron"],
+    "supports": ["brain"],
+    "notes": "Cocoa flavanols are studied for blood flow and cognition; keep portions small."
+  },
+  {
+    "id": "green-tea",
+    "name": "Green tea",
+    "kind": "food",
+    "keyNutrients": ["EGCG catechins", "L-theanine"],
+    "supports": ["brain", "liver", "lungs"],
+    "notes": "EGCG is an antioxidant studied for metabolic and liver support."
+  },
+  {
+    "id": "coffee",
+    "name": "Coffee (filtered)",
+    "kind": "food",
+    "keyNutrients": ["Chlorogenic acids", "Antioxidants"],
+    "supports": ["liver"],
+    "notes": "Regular moderate coffee intake is associated with lower liver scarring risk."
+  },
+  {
+    "id": "beetroot",
+    "name": "Beetroot",
+    "kind": "food",
+    "keyNutrients": ["Dietary nitrates", "Folate", "Betalains"],
+    "supports": ["liver", "heart"],
+    "notes": "Nitrates convert to nitric oxide, supporting vessel flexibility."
+  },
+  {
+    "id": "water",
+    "name": "Water",
+    "kind": "food",
+    "keyNutrients": [],
+    "supports": ["kidney", "skin"],
+    "notes": "Adequate hydration is the single most important habit for kidney health."
+  },
+  {
+    "id": "cabbage",
+    "name": "Cabbage & cruciferous vegetables",
+    "kind": "food",
+    "keyNutrients": ["Glucosinolates", "Vitamin C", "Vitamin K"],
+    "supports": ["kidney", "stomach"],
+    "notes": "Low-potassium cruciferous option studied for kidney-friendly diets."
+  },
+  {
+    "id": "ginger",
+    "name": "Ginger",
+    "kind": "food",
+    "keyNutrients": ["Gingerols"],
+    "supports": ["lungs", "stomach", "immune"],
+    "notes": "Gingerols are studied for nausea relief and airway relaxation."
+  },
+  {
+    "id": "citrus",
+    "name": "Citrus fruits (orange, grapefruit, lemon)",
+    "kind": "food",
+    "keyNutrients": ["Vitamin C", "Flavonoids", "Fiber"],
+    "supports": ["lungs", "skin", "immune", "eyes"],
+    "notes": "Vitamin C supports immune cell function and collagen synthesis."
+  },
+  {
+    "id": "tomatoes",
+    "name": "Tomatoes (raw or cooked)",
+    "kind": "food",
+    "keyNutrients": ["Lycopene", "Vitamin C", "Potassium"],
+    "supports": ["skin", "lungs", "heart"],
+    "notes": "Cooking increases lycopene availability — a rare case where processed is better."
+  },
+  {
+    "id": "yogurt",
+    "name": "Yogurt with live cultures",
+    "kind": "food",
+    "keyNutrients": ["Probiotics", "Protein", "Calcium"],
+    "supports": ["stomach", "immune", "bones"],
+    "notes": "Live-culture fermented foods replenish beneficial gut microbes."
+  },
+  {
+    "id": "fiber-foods",
+    "name": "High-fiber foods (beans, lentils, whole grains)",
+    "kind": "food",
+    "keyNutrients": ["Soluble & insoluble fiber", "Prebiotics", "Folate"],
+    "supports": ["stomach", "heart", "pancreas"],
+    "notes": "Fiber feeds gut bacteria and feeds almost every organ downstream."
+  },
+  {
+    "id": "cinnamon",
+    "name": "Cinnamon (Ceylon)",
+    "kind": "food",
+    "keyNutrients": ["Cinnamaldehyde", "Polyphenols"],
+    "supports": ["pancreas"],
+    "notes": "Ceylon cinnamon is preferred long-term (lower coumarin than cassia)."
+  },
+  {
+    "id": "fenugreek",
+    "name": "Fenugreek seeds",
+    "kind": "food",
+    "keyNutrients": ["Soluble fiber (galactomannan)", "4-hydroxyisoleucine"],
+    "supports": ["pancreas"],
+    "notes": "Studied for improving post-meal glucose response."
+  },
+  {
+    "id": "beans",
+    "name": "Beans & lentils",
+    "kind": "food",
+    "keyNutrients": ["Fiber", "Plant protein", "Magnesium", "Folate"],
+    "supports": ["pancreas", "heart", "stomach"],
+    "notes": "Low glycemic index staple associated with better sugar control."
+  },
+  {
+    "id": "bitter-melon",
+    "name": "Bitter melon",
+    "kind": "food",
+    "keyNutrients": ["Charantin", "Polypeptide-p"],
+    "supports": ["pancreas"],
+    "notes": "Traditional remedy studied for glucose-lowering effects."
+  },
+  {
+    "id": "dairy",
+    "name": "Dairy (milk, yogurt, kefir, cheese)",
+    "kind": "food",
+    "keyNutrients": ["Calcium", "Protein", "Iodine", "Vitamin B12"],
+    "supports": ["bones", "thyroid"],
+    "notes": "Primary dietary iodine source in many countries."
+  },
+  {
+    "id": "avocado",
+    "name": "Avocado",
+    "kind": "food",
+    "keyNutrients": ["Monounsaturated fat", "Vitamin E", "Potassium"],
+    "supports": ["skin", "heart"],
+    "notes": "Supports skin barrier and lipid profiles."
+  },
+  {
+    "id": "sweet-potato",
+    "name": "Sweet potato",
+    "kind": "food",
+    "keyNutrients": ["Beta-carotene", "Vitamin C", "Fiber"],
+    "supports": ["skin", "eyes"],
+    "notes": "Beta-carotene converts to vitamin A, central to skin renewal and vision."
+  },
+  {
+    "id": "carrots",
+    "name": "Carrots",
+    "kind": "food",
+    "keyNutrients": ["Beta-carotene", "Lutein"],
+    "supports": ["eyes", "skin"],
+    "notes": "Classic source of vitamin A precursors for retinal health."
+  },
+  {
+    "id": "mushrooms",
+    "name": "Mushrooms (shiitake, maitake)",
+    "kind": "food",
+    "keyNutrients": ["Beta-glucans", "Vitamin D (sun-exposed)", "Selenium"],
+    "supports": ["immune"],
+    "notes": "Beta-glucans are studied immunomodulators."
+  },
+  {
+    "id": "seaweed",
+    "name": "Seaweed (nori, kelp)",
+    "kind": "food",
+    "keyNutrients": ["Iodine", "Fucoidans", "Trace minerals"],
+    "supports": ["thyroid"],
+    "notes": "Iodine-dense; small amounts suffice — excess can harm the thyroid."
+  },
+  {
+    "id": "brazil-nuts",
+    "name": "Brazil nuts",
+    "kind": "food",
+    "keyNutrients": ["Selenium", "Vitamin E"],
+    "supports": ["thyroid", "immune"],
+    "notes": "1-2 nuts/day covers selenium needs for thyroid hormone conversion."
+  },
+  {
+    "id": "omega3-supplement",
+    "name": "Fish oil / omega-3 (EPA+DHA) supplement",
+    "kind": "supplement",
+    "keyNutrients": ["EPA", "DHA"],
+    "supports": ["heart", "brain", "eyes"],
+    "notes": "Studied for triglyceride reduction; choose third-party-tested brands."
+  },
+  {
+    "id": "vitamin-d3",
+    "name": "Vitamin D3 supplement",
+    "kind": "supplement",
+    "keyNutrients": ["Cholecalciferol"],
+    "supports": ["bones", "immune"],
+    "notes": "Most adults in northern latitudes have low winter levels; test before high doses."
+  },
+  {
+    "id": "magnesium-supplement",
+    "name": "Magnesium supplement (glycinate/citrate)",
+    "kind": "supplement",
+    "keyNutrients": ["Magnesium"],
+    "supports": ["heart", "bones", "brain"],
+    "notes": "Involved in 300+ enzyme reactions; studied for blood pressure and sleep."
+  },
+  {
+    "id": "probiotic-supplement",
+    "name": "Probiotic supplement (multi-strain)",
+    "kind": "supplement",
+    "keyNutrients": ["Live beneficial bacteria"],
+    "supports": ["stomach", "immune"],
+    "notes": "Strain-specific effects matter; food sources are first-line."
+  },
+  {
+    "id": "curcumin-supplement",
+    "name": "Curcumin supplement (with piperine)",
+    "kind": "supplement",
+    "keyNutrients": ["Curcuminoids"],
+    "supports": ["bones", "brain", "heart"],
+    "notes": "Concentrated anti-inflammatory; can interact with blood thinners."
+  },
+  {
+    "id": "psyllium",
+    "name": "Psyllium husk",
+    "kind": "supplement",
+    "keyNutrients": ["Soluble fiber"],
+    "supports": ["stomach", "heart", "pancreas"],
+    "notes": "Evidence-backed for constipation and LDL cholesterol reduction."
+  },
+  {
+    "id": "peptide-bpc-collagen",
+    "name": "Collagen peptides",
+    "kind": "supplement",
+    "keyNutrients": ["Hydrolyzed collagen", "Glycine", "Proline"],
+    "supports": ["skin", "bones"],
+    "notes": "Small trials support skin elasticity and joint comfort."
+  },
+  {
+    "id": "lutein-supplement",
+    "name": "Lutein & zeaxanthin supplement",
+    "kind": "supplement",
+    "keyNutrients": ["Macular carotenoids"],
+    "supports": ["eyes"],
+    "notes": "AREDS2 trial nutrients for macular health."
+  }
+]

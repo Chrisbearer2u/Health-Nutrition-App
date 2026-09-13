@@ -1,0 +1,110 @@
+[
+  {
+    "id": "heart",
+    "name": "Heart & Blood Vessels",
+    "system": "Cardiovascular system",
+    "icon": "heart",
+    "summary": "The heart pumps blood through arteries and veins, delivering oxygen and nutrients to every cell. Cardiovascular health depends on blood pressure, cholesterol balance, and vessel flexibility.",
+    "supportingFoods": ["oats", "fatty-fish", "olive-oil", "berries", "leafy-greens", "garlic", "nuts"],
+    "diseaseIds": ["hypertension", "atherosclerosis", "coronary-heart-disease"]
+  },
+  {
+    "id": "brain",
+    "name": "Brain & Nervous System",
+    "system": "Nervous system",
+    "icon": "brain",
+    "summary": "The brain controls thought, memory, emotion, and movement. Neurons need steady glucose, healthy fats, and antioxidants to function and resist age-related decline.",
+    "supportingFoods": ["fatty-fish", "berries", "walnuts", "turmeric", "eggs", "dark-chocolate", "green-tea"],
+    "diseaseIds": ["depression", "alzheimers-disease", "migraine"]
+  },
+  {
+    "id": "liver",
+    "name": "Liver",
+    "system": "Digestive / metabolic system",
+    "icon": "liver",
+    "summary": "The liver filters toxins, stores energy, produces bile, and regulates fats and sugars in the blood. It is remarkably self-repairing when supported well.",
+    "supportingFoods": ["coffee", "green-tea", "garlic", "leafy-greens", "olive-oil", "beetroot"],
+    "diseaseIds": ["fatty-liver-disease"]
+  },
+  {
+    "id": "kidney",
+    "name": "Kidneys",
+    "system": "Urinary system",
+    "icon": "kidney",
+    "summary": "The paired kidneys filter waste from the blood, balance fluids and minerals, and help control blood pressure. They depend on good hydration and stable blood sugar and pressure.",
+    "supportingFoods": ["water", "leafy-greens", "berries", "fatty-fish", "cabbage"],
+    "diseaseIds": ["kidney-stones", "chronic-kidney-disease"]
+  },
+  {
+    "id": "lungs",
+    "name": "Lungs & Airways",
+    "system": "Respiratory system",
+    "icon": "lungs",
+    "summary": "The lungs exchange oxygen and carbon dioxide. Airway health is affected by inflammation, smoke exposure, and environmental pollutants.",
+    "supportingFoods": ["turmeric", "ginger", "citrus", "tomatoes", "green-tea"],
+    "diseaseIds": ["asthma", "copd"]
+  },
+  {
+    "id": "stomach",
+    "name": "Stomach & Gut",
+    "system": "Digestive system",
+    "icon": "stomach",
+    "summary": "The digestive tract breaks down food, absorbs nutrients, and hosts trillions of beneficial microbes that shape immunity and mood.",
+    "supportingFoods": ["yogurt", "fiber-foods", "ginger", "garlic", "oats"],
+    "diseaseIds": ["gerd", "peptic-ulcer", "ibs", "constipation"]
+  },
+  {
+    "id": "pancreas",
+    "name": "Pancreas & Blood Sugar",
+    "system": "Endocrine system",
+    "icon": "pancreas",
+    "summary": "The pancreas produces insulin and digestive enzymes. Stable blood sugar protects it and every organ it feeds.",
+    "supportingFoods": ["cinnamon", "fenugreek", "leafy-greens", "nuts", "beans", "bitter-melon"],
+    "diseaseIds": ["type-2-diabetes"]
+  },
+  {
+    "id": "bones",
+    "name": "Bones & Joints",
+    "system": "Musculoskeletal system",
+    "icon": "bones",
+    "summary": "Bones and joints form the frame that lets the body move. Bone is living tissue that constantly remodels and needs calcium, vitamin D, and protein.",
+    "supportingFoods": ["dairy", "leafy-greens", "fatty-fish", "nuts", "eggs"],
+    "diseaseIds": ["osteoporosis", "arthritis", "gout"]
+  },
+  {
+    "id": "skin",
+    "name": "Skin",
+    "system": "Integumentary system",
+    "icon": "skin",
+    "summary": "The skin is the body's largest organ — a barrier against infection, UV radiation, and dehydration, and a mirror of internal nutrition.",
+    "supportingFoods": ["water", "tomatoes", "avocado", "nuts", "citrus", "sweet-potato"],
+    "diseaseIds": ["acne", "eczema"]
+  },
+  {
+    "id": "eyes",
+    "name": "Eyes",
+    "system": "Visual system",
+    "icon": "eyes",
+    "summary": "The eyes convert light into nerve signals. The retina is rich in fats and vulnerable to oxidative and blue-light stress.",
+    "supportingFoods": ["carrots", "leafy-greens", "eggs", "fatty-fish", "citrus"],
+    "diseaseIds": ["macular-degeneration", "cataracts", "dry-eye"]
+  },
+  {
+    "id": "immune",
+    "name": "Immune System",
+    "system": "Immune / lymphatic system",
+    "icon": "immune",
+    "summary": "A network of cells and organs (including the gut) that defends against infections and abnormal cells. Nutrition status directly shapes immune competence.",
+    "supportingFoods": ["citrus", "garlic", "ginger", "yogurt", "turmeric", "mushrooms"],
+    "diseaseIds": ["common-cold"]
+  },
+  {
+    "id": "thyroid",
+    "name": "Thyroid",
+    "system": "Endocrine system",
+    "icon": "thyroid",
+    "summary": "A butterfly-shaped gland in the neck that sets the pace of metabolism through iodine-dependent hormones.",
+    "supportingFoods": ["seaweed", "brazil-nuts", "fatty-fish", "eggs", "dairy"],
+    "diseaseIds": ["hypothyroidism"]
+  }
+]

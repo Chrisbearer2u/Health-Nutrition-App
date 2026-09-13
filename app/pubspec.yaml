@@ -1,0 +1,46 @@
+name: nutriguide
+description: >-
+  Health & nutrition information app: browse foods and supplements that support
+  specific organs and body systems, and ask an AI assistant about diseases,
+  their causes, effects, and the natural foods/supplements that may help.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Networking — talks to our backend proxy (never to the LLM API directly).
+  http: ^1.2.2
+  # Lightweight state management.
+  provider: ^6.1.2
+  # Renders the chatbot's Markdown responses.
+  flutter_markdown: ^0.7.4+3
+  # Persists chat history locally on the device.
+  shared_preferences: ^2.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  # Generates Android launcher icons from assets/branding/ — run:
+  #   dart run flutter_launcher_icons
+  # Regenerate the source art with:
+  #   backend/.venv/Scripts/python app/tool/generate_assets.py
+  flutter_launcher_icons: ^0.14.1
+
+flutter_launcher_icons:
+  image_path: "assets/branding/icon.png"
+  android: true
+  ios: false
+  adaptive_icon_background: "#155823"
+  adaptive_icon_foreground: "assets/branding/adaptive-foreground.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/data/organs.json
+    - assets/data/diseases.json
+    - assets/data/foods.json

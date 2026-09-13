@@ -1,0 +1,26 @@
+# Secrets — never commit
+backend/.env
+app/android/key.properties
+*.jks
+*.keystore
+service-account*.json
+
+# Python
+backend/.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Flutter / Dart
+app/.dart_tool/
+app/.flutter-plugins*
+app/build/
+app/android/.gradle/
+app/android/local.properties
+app/.idea/
+
+# IDE / OS
+.idea/
+*.iml
+.DS_Store
+Thumbs.db

@@ -1,0 +1,869 @@
+[
+  {
+    "id": "hypertension",
+    "name": "High blood pressure (hypertension)",
+    "organId": "heart",
+    "category": "Cardiovascular condition",
+    "description": "Persistently elevated pressure of blood against artery walls (typically 130/80 mmHg or higher). Often symptomless for years while quietly damaging vessels, the heart, kidneys, and brain.",
+    "causes": [
+      "High salt (sodium) intake and low potassium intake",
+      "Excess body weight and physical inactivity",
+      "Chronic stress, alcohol, and smoking",
+      "Genetics and increasing age",
+      "Chronic kidney disease or sleep apnea"
+    ],
+    "harmfulEffects": [
+      "Stroke and heart attack from damaged, narrowed vessels",
+      "Heart enlargement and eventual heart failure",
+      "Kidney damage and vision loss"
+    ],
+    "helpfulFoods": [
+      "Leafy greens (nitrates) — spinach, kale, arugula",
+      "Beetroot — concentrated dietary nitrates",
+      "Oats — beta-glucan fiber",
+      "Berries — anthocyanins",
+      "Fatty fish (salmon, sardines) — omega-3 EPA/DHA",
+      "Garlic — allicin",
+      "Bananas and beans — potassium"
+    ],
+    "helpfulSupplements": [
+      "Magnesium (glycinate/citrate) — modest BP reduction in trials",
+      "Omega-3 (EPA/DHA) — small systolic reduction",
+      "Psyllium husk — indirect support via weight/lipids"
+    ],
+    "sources": [
+      "WHO — Sodium intake guideline (sodium/potassium balance)",
+      "NIH ODS — Magnesium and Omega-3 fact sheets",
+      "PubMed meta-analyses: beetroot juice and blood pressure (nitric oxide pathway)"
+    ]
+  },
+  {
+    "id": "atherosclerosis",
+    "name": "Atherosclerosis (hardened arteries)",
+    "organId": "heart",
+    "category": "Cardiovascular condition",
+    "description": "Build-up of cholesterol-rich plaque inside artery walls, narrowing them and reducing blood flow. Ruptured plaques cause most heart attacks and strokes.",
+    "causes": [
+      "High LDL cholesterol and low HDL",
+      "Smoking and high blood pressure",
+      "Diabetes and chronic inflammation",
+      "Trans-fat and excess sugar intake",
+      "Sedentary lifestyle"
+    ],
+    "harmfulEffects": [
+      "Coronary artery disease and heart attack",
+      "Stroke and peripheral artery disease",
+      "Chronic kidney artery narrowing"
+    ],
+    "helpfulFoods": [
+      "Extra virgin olive oil — monounsaturated fat + polyphenols",
+      "Oats — LDL-lowering beta-glucan",
+      "Nuts (almonds, walnuts) — unsaturated fats",
+      "Fatty fish — omega-3s reduce triglycerides",
+      "Beans & lentils — soluble fiber",
+      "Tomatoes — lycopene"
+    ],
+    "helpfulSupplements": [
+      "Omega-3 (EPA/DHA) — triglyceride reduction",
+      "Psyllium husk — LDL cholesterol reduction",
+      "Plant sterols/stanols — block cholesterol absorption"
+    ],
+    "sources": [
+      "WHO — Cardiovascular disease prevention guidelines",
+      "NIH NHLBI — Atherosclerosis overview",
+      "Cochrane reviews — oats/psyllium and LDL cholesterol"
+    ]
+  },
+  {
+    "id": "coronary-heart-disease",
+    "name": "Coronary heart disease",
+    "organId": "heart",
+    "category": "Cardiovascular condition",
+    "description": "Narrowing of the arteries that feed the heart muscle itself, causing chest pain (angina) or heart attack when blood flow can't meet demand.",
+    "causes": [
+      "Atherosclerosis of coronary arteries",
+      "High LDL cholesterol, smoking, hypertension, diabetes",
+      "Family history of early heart disease"
+    ],
+    "harmfulEffects": [
+      "Angina and reduced exercise capacity",
+      "Heart attack (myocardial infarction)",
+      "Heart failure and arrhythmias"
+    ],
+    "helpfulFoods": [
+      "Mediterranean-style diet: olive oil, vegetables, fish, legumes",
+      "Fatty fish twice weekly",
+      "Nuts and whole grains",
+      "Berries and dark leafy greens"
+    ],
+    "helpfulSupplements": [
+      "Omega-3 (EPA/DHA)",
+      "Plant sterols/stanols",
+      "Coenzyme Q10 — discussed with a cardiologist, especially with statins"
+    ],
+    "sources": [
+      "PREDIMED trial — Mediterranean diet and cardiovascular events (NEJM)",
+      "WHO — Prevention of cardiovascular disease"
+    ]
+  },
+  {
+    "id": "depression",
+    "name": "Depression",
+    "organId": "brain",
+    "category": "Mental health condition",
+    "description": "A mood disorder with persistent sadness, loss of interest, sleep and appetite changes, and impaired daily functioning. Involves neurotransmitter, inflammatory, and neuroendocrine pathways.",
+    "causes": [
+      "Genetic vulnerability and life stress or trauma",
+      "Chronic inflammation and poor gut health (gut-brain axis)",
+      "Deficiencies in omega-3, B-vitamins (folate, B12), vitamin D",
+      "Sleep disruption and social isolation"
+    ],
+    "harmfulEffects": [
+      "Impaired relationships, work, and self-care",
+      "Increased risk of anxiety and substance use",
+      "Higher cardiovascular and overall mortality risk"
+    ],
+    "helpfulFoods": [
+      "Fatty fish — EPA/DHA omega-3s",
+      "Mediterranean-pattern diet — vegetables, legumes, olive oil",
+      "Fermented foods (yogurt, kefir) — gut-brain axis",
+      "Walnuts and leafy greens",
+      "Dark chocolate (70%+) in moderation"
+    ],
+    "helpfulSupplements": [
+      "Omega-3 high-EPA formulas — best-studied nutritional adjunct",
+      "Vitamin D — if deficient",
+      "Folate (L-methylfolate) and B12 — if levels are low",
+      "S-adenosylmethionine (SAMe) — under professional guidance"
+    ],
+    "sources": [
+      "WHO — Depression fact sheet",
+      "SMILES trial — dietary intervention and depression (BMC Medicine)",
+      "NIH ODS — Omega-3 and B-vitamin fact sheets"
+    ]
+  },
+  {
+    "id": "alzheimers-disease",
+    "name": "Alzheimer's disease",
+    "organId": "brain",
+    "category": "Neurodegenerative disease",
+    "description": "Progressive memory and cognitive decline from abnormal protein build-up (amyloid, tau) and neuron loss. The most common cause of dementia.",
+    "causes": [
+      "Age (main risk factor) and genetics (APOE4)",
+      "Untreated hypertension, diabetes, and obesity in mid-life",
+      "Low physical and cognitive activity",
+      "Poor diet low in antioxidants and omega-3s"
+    ],
+    "harmfulEffects": [
+      "Memory loss and disorientation",
+      "Loss of independence and self-care ability",
+      "Personality changes and, ultimately, death"
+    ],
+    "helpfulFoods": [
+      "MIND-diet pattern: leafy greens, berries, nuts",
+      "Fatty fish — DHA is a major brain structural fat",
+      "Extra virgin olive oil",
+      "Turmeric (curcumin) with black pepper",
+      "Green tea — EGCG"
+    ],
+    "helpfulSupplements": [
+      "Omega-3 DHA — brain structural support",
+      "Vitamin D — deficiency linked to faster decline",
+      "Vitamin B12 — treat deficiency promptly in older adults"
+    ],
+    "sources": [
+      "NIH NIA — Alzheimer's disease overview",
+      "Morris et al., MIND diet and cognitive decline (Alzheimer's & Dementia journal)"
+    ]
+  },
+  {
+    "id": "migraine",
+    "name": "Migraine",
+    "organId": "brain",
+    "category": "Neurological condition",
+    "description": "Recurrent intense headaches, often one-sided, with nausea and sensitivity to light/sound. Involves abnormal brain excitability and trigeminal nerve inflammation.",
+    "causes": [
+      "Genetic predisposition (runs in families)",
+      "Triggers: stress, poor sleep, skipped meals, dehydration",
+      "Food triggers in some people: aged cheese, alcohol, MSG",
+      "Hormonal fluctuations"
+    ],
+    "harmfulEffects": [
+      "Debilitating pain episodes and lost productivity",
+      "Medication-overuse headache from frequent painkillers",
+      "Progression to chronic migraine"
+    ],
+    "helpfulFoods": [
+      "Magnesium-rich foods: leafy greens, nuts, seeds",
+      "Ginger — anti-nausea support",
+      "Riboflavin sources: eggs, dairy",
+      "Regular balanced meals to avoid fasting triggers"
+    ],
+    "helpfulSupplements": [
+      "Magnesium (400-600 mg/day) — prevention, well-studied",
+      "Riboflavin (vitamin B2, 400 mg/day) — preventive trials",
+      "Coenzyme Q10 — modest preventive evidence",
+      "Feverfew — mixed evidence; discuss with a doctor"
+    ],
+    "sources": [
+      "American Migraine Foundation — nutraceuticals",
+      "NIH ODS — Magnesium fact sheet",
+      "Cochrane review — riboflavin for migraine prophylaxis"
+    ]
+  },
+  {
+    "id": "fatty-liver-disease",
+    "name": "Non-alcoholic fatty liver disease (NAFLD)",
+    "organId": "liver",
+    "category": "Metabolic liver condition",
+    "description": "Fat accumulation in liver cells in people who drink little or no alcohol. Ranges from simple fat deposits to inflammation (NASH) and scarring (fibrosis/cirrhosis).",
+    "causes": [
+      "Insulin resistance, obesity, and type 2 diabetes",
+      "High sugar intake (especially fructose)",
+      "Sedentary lifestyle",
+      "Rapid weight loss and some medications"
+    ],
+    "harmfulEffects": [
+      "Liver inflammation and scarring (fibrosis → cirrhosis)",
+      "Liver failure and liver cancer risk",
+      "Higher cardiovascular risk"
+    ],
+    "helpfulFoods": [
+      "Filtered coffee — associated with less liver scarring",
+      "Green tea — EGCG",
+      "Olive-oil-based Mediterranean diet",
+      "Leafy greens and beetroot",
+      "Garlic",
+      "Oily fish — omega-3s reduce liver fat in trials"
+    ],
+    "helpfulSupplements": [
+      "Omega-3 (EPA/DHA) — reduces liver fat in trials",
+      "Vitamin E (800 IU) — studied in NASH; use with medical guidance"
+    ],
+    "sources": [
+      "EASL/EASD clinical guidelines on NAFLD",
+      "NIH NIDDK — NAFLD overview",
+      "Meta-analyses: coffee and liver fibrosis"
+    ]
+  },
+  {
+    "id": "kidney-stones",
+    "name": "Kidney stones",
+    "organId": "kidney",
+    "category": "Urinary condition",
+    "description": "Hard mineral deposits (most often calcium oxalate) that form in the kidneys and cause severe pain when passing through the urinary tract.",
+    "causes": [
+      "Chronic low fluid intake — concentrated urine",
+      "High salt and high animal-protein diet",
+      "Excess oxalate-rich foods without calcium pairing",
+      "Obesity, some metabolic conditions and medications"
+    ],
+    "harmfulEffects": [
+      "Severe colic pain and urinary blockage",
+      "Recurrent stone formation",
+      "Kidney damage and infection risk"
+    ],
+    "helpfulFoods": [
+      "Water — 2.5-3 L/day, the single most effective measure",
+      "Citrus (lemon, orange) — citrate inhibits stone formation",
+      "Calcium-rich foods WITH meals — binds oxalate in the gut",
+      "Fruits and vegetables generally — potassium citrate"
+    ],
+    "helpfulSupplements": [
+      "Potassium citrate — under medical supervision",
+      "Magnesium — may reduce oxalate crystallization"
+    ],
+    "sources": [
+      "NIH NIDDK — Kidney stones overview",
+      "American Urological Association — stone prevention guidance"
+    ]
+  },
+  {
+    "id": "chronic-kidney-disease",
+    "name": "Chronic kidney disease (CKD)",
+    "organId": "kidney",
+    "category": "Chronic organ condition",
+    "description": "Gradual, permanent loss of kidney filtering ability, staged 1-5. Usually silent until advanced stages. Dietary management is central and changes as stages progress.",
+    "causes": [
+      "Diabetes and high blood pressure (leading causes)",
+      "Chronic glomerulonephritis or polycystic kidneys",
+      "Long-term NSAID use",
+      "Smoking and obesity"
+    ],
+    "harmfulEffects": [
+      "Fluid, potassium, and phosphate build-up",
+      "Anemia, bone disease, and cardiovascular strain",
+      "End-stage disease requiring dialysis or transplant"
+    ],
+    "helpfulFoods": [
+      "Stage-dependent — medical dietitian guidance is essential",
+      "Cabbage and cruciferous vegetables — lower potassium",
+      "Blueberries and cranberries",
+      "Olive oil — kidney-friendly fat",
+      "Controlled portions of high-quality protein"
+    ],
+    "helpfulSupplements": [
+      "Active vitamin D — only as prescribed",
+      "Sodium bicarbonate — if prescribed for acid balance",
+      "Avoid high-dose vitamin C and herbal supplements in CKD"
+    ],
+    "sources": [
+      "NIH NIDDK — CKD nutrition guidance",
+      "KDIGO clinical practice guidelines"
+    ]
+  },
+  {
+    "id": "asthma",
+    "name": "Asthma",
+    "organId": "lungs",
+    "category": "Respiratory condition",
+    "description": "Chronic airway inflammation causing wheeze, cough, chest tightness, and episodes of breathlessness, often triggered by allergens, exercise, or cold air.",
+    "causes": [
+      "Genetic predisposition with allergic sensitization",
+      "Air pollution, tobacco smoke, and occupational irritants",
+      "Respiratory infections in early life",
+      "Obesity and low fruit/vegetable intake"
+    ],
+    "harmfulEffects": [
+      "Severe attacks requiring emergency care",
+      "Airway remodeling with poorly controlled disease",
+      "Reduced exercise capacity and sleep quality"
+    ],
+    "helpfulFoods": [
+      "Fruits and vegetables rich in vitamin C — citrus, peppers",
+      "Tomatoes — lycopene, associated with less airway reactivity",
+      "Oily fish — anti-inflammatory omega-3s",
+      "Ginger and turmeric — anti-inflammatory compounds"
+    ],
+    "helpfulSupplements": [
+      "Vitamin D — supplementation reduced attack rates in deficient patients (Cochrane)",
+      "Omega-3 — modest anti-inflammatory support",
+      "Magnesium — IV form is used in emergencies; oral role is supportive"
+    ],
+    "sources": [
+      "WHO — Asthma fact sheet",
+      "Cochrane review — vitamin D and asthma exacerbations",
+      "GINA — Global Strategy for Asthma Management"
+    ]
+  },
+  {
+    "id": "copd",
+    "name": "COPD (chronic obstructive pulmonary disease)",
+    "organId": "lungs",
+    "category": "Respiratory disease",
+    "description": "Progressive, largely irreversible airflow limitation (chronic bronchitis + emphysema), most often caused by smoking or long-term pollutant exposure.",
+    "causes": [
+      "Tobacco smoking (dominant cause)",
+      "Indoor/outdoor air pollution and occupational dusts",
+      "Genetic alpha-1 antitrypsin deficiency (rare)"
+    ],
+    "harmfulEffects": [
+      "Progressive breathlessness and disability",
+      "Frequent chest infections",
+      "Weight loss, muscle wasting, heart strain"
+    ],
+    "helpfulFoods": [
+      "Adequate calories and protein — muscle preservation is critical",
+      "Oily fish and anti-inflammatory Mediterranean pattern",
+      "Fruit and vegetables — higher intake linked to better lung function"
+    ],
+    "helpfulSupplements": [
+      "Vitamin D — often low in COPD; deficiency linked to flare-ups",
+      "Oral nutritional supplements — when weight loss occurs",
+      "Creatine — studied as adjunct in pulmonary rehabilitation"
+    ],
+    "sources": [
+      "WHO — COPD fact sheet",
+      "GOLD — Global strategy for COPD (nutrition section)"
+    ]
+  },
+  {
+    "id": "gerd",
+    "name": "GERD (acid reflux)",
+    "organId": "stomach",
+    "category": "Digestive condition",
+    "description": "Backflow of stomach acid into the esophagus causing heartburn, regurgitation, and sometimes cough or voice changes.",
+    "causes": [
+      "Weakened lower esophageal sphincter",
+      "Excess weight, large late meals, lying down after eating",
+      "Trigger foods: fried, spicy, fatty, chocolate, coffee, alcohol",
+      "Smoking and some medications"
+    ],
+    "harmfulEffects": [
+      "Esophagitis and painful swallowing",
+      "Barrett's esophagus with increased cancer risk if untreated"
+    ],
+    "helpfulFoods": [
+      "Oatmeal and non-acidic vegetables",
+      "Ginger — settles the stomach",
+      "Lean proteins (chicken, fish, egg whites)",
+      "Melons and bananas (well-tolerated fruits)"
+    ],
+    "helpfulSupplements": [
+      "Alginate-based formulations — form a raft over stomach contents",
+      "Deglycyrrhizinated licorice (DGL) — traditional support, limited evidence"
+    ],
+    "sources": [
+      "NIH NIDDK — GERD overview",
+      "American Gastroenterological Association — GERD guidance"
+    ]
+  },
+  {
+    "id": "peptic-ulcer",
+    "name": "Peptic ulcer",
+    "organId": "stomach",
+    "category": "Digestive condition",
+    "description": "Open sore in the stomach lining (gastric) or first part of the small intestine (duodenal), causing burning upper abdominal pain.",
+    "causes": [
+      "Helicobacter pylori infection (major cause)",
+      "Long-term NSAIDs (aspirin, ibuprofen)",
+      "Smoking and alcohol, which impair healing"
+    ],
+    "harmfulEffects": [
+      "Bleeding and perforation (medical emergencies)",
+      "Persistent pain and poor nutrient absorption"
+    ],
+    "helpfulFoods": [
+      "Fermented foods (yogurt, kimchi, sauerkraut) — studied alongside H. pylori treatment",
+      "Broccoli sprouts — sulforaphane studied against H. pylori",
+      "Green tea and berries — polyphenols",
+      "Avoid: coffee, alcohol, very spicy foods during flare-ups"
+    ],
+    "helpfulSupplements": [
+      "Probiotics — improve H. pylori eradication rates alongside antibiotics",
+      "Zinc-carnosine — mucosal healing studied in Japan",
+      "Deglycyrrhizinated licorice (DGL)"
+    ],
+    "sources": [
+      "NIH NIDDK — Peptic ulcers",
+      "Cochrane review — probiotics and H. pylori eradication"
+    ]
+  },
+  {
+    "id": "ibs",
+    "name": "Irritable bowel syndrome (IBS)",
+    "organId": "stomach",
+    "category": "Functional digestive disorder",
+    "description": "Chronic abdominal pain with constipation, diarrhea, or both — without structural damage. Gut-brain interaction disorder with microbiome involvement.",
+    "causes": [
+      "Visceral hypersensitivity and altered gut motility",
+      "Post-infectious gut changes",
+      "Stress and gut microbiome imbalance",
+      "FODMAP food intolerance in many patients"
+    ],
+    "harmfulEffects": [
+      "Chronic pain, bloating, and unpredictable bowel habits",
+      "Anxiety, reduced quality of life, work absenteeism"
+    ],
+    "helpfulFoods": [
+      "Low-FODMAP approach — guided reintroduction (dietitian-supported)",
+      "Soluble fiber: oats, psyllium (insoluble bran can worsen symptoms)",
+      "Peppermint and ginger",
+      "Fermented foods — individual tolerance"
+    ],
+    "helpfulSupplements": [
+      "Peppermint oil (enteric-coated) — strong trial evidence for IBS pain",
+      "Psyllium — evidence-backed soluble fiber",
+      "Multi-strain probiotics — strain-specific benefit"
+    ],
+    "sources": [
+      "American College of Gastroenterology — IBS guidelines",
+      "Monash University — low-FODMAP diet research"
+    ]
+  },
+  {
+    "id": "constipation",
+    "name": "Chronic constipation",
+    "organId": "stomach",
+    "category": "Digestive condition",
+    "description": "Infrequent (fewer than 3/week) or difficult bowel movements lasting weeks or longer.",
+    "causes": [
+      "Low fiber and low fluid intake",
+      "Physical inactivity",
+      "Medications (opioids, some antidepressants, iron)",
+      "Ignoring the urge; thyroid issues"
+    ],
+    "harmfulEffects": [
+      "Hemorrhoids and anal fissures",
+      "Bloating, discomfort, reduced appetite"
+    ],
+    "helpfulFoods": [
+      "Water — fiber needs fluid to work",
+      "Prunes (dried plums) — sorbitol + fiber, well-studied",
+      "Oats, beans, lentils — soluble fiber",
+      "Kiwi fruit — 2/day improved frequency in trials",
+      "Ground flaxseed"
+    ],
+    "helpfulSupplements": [
+      "Psyllium husk — first-line evidence-backed fiber",
+      "Magnesium citrate — draws water into the bowel",
+      "Probiotics — B. lactis strains have trial support"
+    ],
+    "sources": [
+      "NIH NIDDK — Constipation overview",
+      "Meta-analyses: prunes/kiwi for chronic constipation"
+    ]
+  },
+  {
+    "id": "type-2-diabetes",
+    "name": "Type 2 diabetes",
+    "organId": "pancreas",
+    "category": "Metabolic disease",
+    "description": "Chronic elevation of blood glucose from insulin resistance and declining insulin production. Often reversible in early stages with diet, weight loss, and activity.",
+    "causes": [
+      "Excess body fat (especially abdominal) and inactivity",
+      "Insulin resistance from refined-carbohydrate-heavy diets",
+      "Genetics and family history",
+      "Poor sleep and chronic stress"
+    ],
+    "harmfulEffects": [
+      "Nerve damage (neuropathy), kidney disease, and vision loss",
+      "Heart attack and stroke risk",
+      "Slow wound healing and foot complications"
+    ],
+    "helpfulFoods": [
+      "Low-glycemic pattern: beans, lentils, oats, non-starchy vegetables",
+      "Cinnamon (Ceylon) — modest glucose effects",
+      "Fenugreek seeds — improved post-meal glucose in trials",
+      "Bitter melon — traditional glucose-lowering food",
+      "Nuts — reduced HbA1c in trial meta-analyses",
+      "Leafy greens — magnesium and low glycemic load"
+    ],
+    "helpfulSupplements": [
+      "Magnesium — low levels worsen insulin resistance",
+      "Cinnamon extract — small HbA1c reduction in meta-analyses",
+      "Psyllium — slows glucose absorption with meals",
+      "Alpha-lipoic acid — studied for diabetic neuropathy"
+    ],
+    "sources": [
+      "WHO — Diabetes fact sheet",
+      "American Diabetes Association — Standards of Care (lifestyle)",
+      "NIH ODS — Cinnamon, Magnesium fact sheets"
+    ]
+  },
+  {
+    "id": "osteoporosis",
+    "name": "Osteoporosis",
+    "organId": "bones",
+    "category": "Bone disease",
+    "description": "Progressive loss of bone density and strength, making bones fragile and fracture-prone — most visible in the hip, spine, and wrist after menopause or in older age.",
+    "causes": [
+      "Age-related hormone changes (menopause estrogen decline)",
+      "Low lifelong calcium and vitamin D intake",
+      "Sedentary lifestyle — bone needs loading",
+      "Smoking, excess alcohol, long-term steroid use"
+    ],
+    "harmfulEffects": [
+      "Fragility fractures — hip fractures carry high mortality in the elderly",
+      "Loss of height and stooped posture",
+      "Chronic pain and immobility"
+    ],
+    "helpfulFoods": [
+      "Dairy: milk, yogurt, kefir, cheese",
+      "Canned sardines/salmon with bones",
+      "Leafy greens (kale, bok choy) — absorbable calcium",
+      "Tofu (calcium-set), almonds, sesame/tahini"
+    ],
+    "helpfulSupplements": [
+      "Calcium (500-600 mg with food) if dietary intake is low",
+      "Vitamin D3 — with blood-level monitoring",
+      "Vitamin K2 — directs calcium to bone (MK-7 form)",
+      "Magnesium — bone matrix cofactor"
+    ],
+    "sources": [
+      "NIH ODS — Calcium and Vitamin D fact sheets",
+      "WHO — Prevention and management of osteoporosis",
+      "NOF/Bone Health & Osteoporosis Foundation guidance"
+    ]
+  },
+  {
+    "id": "arthritis",
+    "name": "Osteoarthritis",
+    "organId": "bones",
+    "category": "Joint disease",
+    "description": "Wear-driven degeneration of joint cartilage, causing pain, stiffness, and reduced mobility — typically in knees, hips, and hands.",
+    "causes": [
+      "Aging and joint overuse/injury",
+      "Excess body weight loading the joints",
+      "Chronic low-grade inflammation",
+      "Female sex and genetics"
+    ],
+    "harmfulEffects": [
+      "Chronic pain and disability",
+      "Reduced physical activity → muscle loss and weight gain"
+    ],
+    "helpfulFoods": [
+      "Anti-inflammatory Mediterranean pattern",
+      "Oily fish — omega-3s reduce joint inflammation",
+      "Turmeric (curcumin with piperine)",
+      "Extra virgin olive oil — oleocanthal, an NSAID-like compound",
+      "Broccoli — sulforaphane studied for cartilage protection"
+    ],
+    "helpfulSupplements": [
+      "Curcumin — pain reduction comparable to NSAIDs in some trials",
+      "Omega-3 (EPA/DHA)",
+      "Collagen peptides — joint comfort in trials",
+      "Glucosamine/chondroitin — mixed evidence, well tolerated"
+    ],
+    "sources": [
+      "Osteoarthritis and Cartilage journal — curcumin trials",
+      "Arthritis Foundation — diet and arthritis"
+    ]
+  },
+  {
+    "id": "gout",
+    "name": "Gout",
+    "organId": "bones",
+    "category": "Metabolic joint disease",
+    "description": "Sudden, severe joint pain (classically the big toe) from uric-acid crystals depositing in joints when blood urate is chronically high.",
+    "causes": [
+      "Diets high in purines: organ meats, some seafood, beer",
+      "Fructose-sweetened drinks and alcohol",
+      "Obesity, kidney impairment, and genetics",
+      "Diuretic medications"
+    ],
+    "harmfulEffects": [
+      "Recurrent excruciating attacks",
+      "Joint damage and urate crystal tophi",
+      "Kidney stones and kidney disease"
+    ],
+    "helpfulFoods": [
+      "Cherries (fresh or juice) — lower gout attack risk in studies",
+      "Low-fat dairy — associated with lower urate",
+      "Vitamin C-rich fruit — modest urate lowering",
+      "Coffee — associated with lower urate levels",
+      "Water — plenty; avoid alcohol and sugary drinks"
+    ],
+    "helpfulSupplements": [
+      "Vitamin C (500 mg/day) — modest urate-lowering in trials",
+      "Cherry extract — preliminary evidence"
+    ],
+    "sources": [
+      "NIH NIAMS — Gout overview",
+      "Zhang et al., Cherries and gout attacks (Arthritis & Rheumatism)"
+    ]
+  },
+  {
+    "id": "acne",
+    "name": "Acne",
+    "organId": "skin",
+    "category": "Skin condition",
+    "description": "Inflammation of oil glands and hair follicles producing pimples, blackheads, and cysts — driven by hormones, sebum, bacteria (C. acnes), and inflammation.",
+    "causes": [
+      "Hormonal surges (puberty, PCOS, stress)",
+      "High-glycemic diets and dairy (especially skim milk) in susceptible people",
+      "Occlusive cosmetics and humidity"
+    ],
+    "harmfulEffects": [
+      "Scarring and dark spots",
+      "Anxiety, reduced self-esteem"
+    ],
+    "helpfulFoods": [
+      "Low-glycemic whole foods: vegetables, legumes, whole grains",
+      "Fatty fish — anti-inflammatory omega-3s",
+      "Zinc sources: pumpkin seeds, lentils, cashews",
+      "Water instead of sugary drinks"
+    ],
+    "helpfulSupplements": [
+      "Zinc — anti-inflammatory; studied vs. placebo for acne",
+      "Omega-3 — reduced lesion severity in small trials",
+      "Probiotics — emerging gut-skin axis evidence"
+    ],
+    "sources": [
+      "AAD — Acne treatment guidelines",
+      "Meta-analyses: low-glycemic diets and acne lesion counts"
+    ]
+  },
+  {
+    "id": "eczema",
+    "name": "Eczema (atopic dermatitis)",
+    "organId": "skin",
+    "category": "Skin condition",
+    "description": "Chronic itchy, inflamed, dry skin from a weakened skin barrier and immune over-reactivity — often alongside asthma and allergies.",
+    "causes": [
+      "Filaggrin gene variants — impaired barrier",
+      "Immune (Th2) inflammation",
+      "Irritants, harsh soaps, and allergens",
+      "Stress and low humidity"
+    ],
+    "harmfulEffects": [
+      "Sleep loss from itch, skin infections",
+      "Social and psychological impact"
+    ],
+    "helpfulFoods": [
+      "Anti-inflammatory pattern: fatty fish, colorful vegetables",
+      "Probiotic foods (yogurt, kefir) — early-life studies show prevention benefit",
+      "Sunflower seed oil — supports barrier in small studies",
+      "Adequate water intake"
+    ],
+    "helpfulSupplements": [
+      "Vitamin D — deficiency common in eczema; supplementation helps some",
+      "Probiotics (Lactobacillus rhamnosus) — mixed evidence, prevention in infants",
+      "Evening primrose/borage oil (GLA) — weak evidence"
+    ],
+    "sources": [
+      "AAD — Atopic dermatitis guidelines",
+      "Cochrane — probiotics for eczema"
+    ]
+  },
+  {
+    "id": "macular-degeneration",
+    "name": "Age-related macular degeneration (AMD)",
+    "organId": "eyes",
+    "category": "Eye disease",
+    "description": "Degeneration of the macula — the central retina responsible for sharp vision — causing a dark or blurred spot in central sight. Leading cause of vision loss over 50.",
+    "causes": [
+      "Aging and genetics",
+      "Smoking — strongest modifiable risk factor",
+      "Low intake of lutein/zeaxanthin and omega-3s",
+      "Cardiovascular risk factors"
+    ],
+    "harmfulEffects": [
+      "Loss of reading and face recognition ability",
+      "Legal blindness in advanced stages"
+    ],
+    "helpfulFoods": [
+      "Dark leafy greens: kale, spinach — lutein + zeaxanthin",
+      "Egg yolks — highly bioavailable lutein",
+      "Oily fish — DHA concentrates in the retina",
+      "Orange peppers and corn — zeaxanthin"
+    ],
+    "helpfulSupplements": [
+      "AREDS2 formula: lutein, zeaxanthin, vitamins C/E, zinc, copper — proven to slow progression",
+      "Omega-3 (DHA)"
+    ],
+    "sources": [
+      "NEI — AREDS2 clinical trial results",
+      "NIH NEI — Age-related macular degeneration"
+    ]
+  },
+  {
+    "id": "cataracts",
+    "name": "Cataracts",
+    "organId": "eyes",
+    "category": "Eye disease",
+    "description": "Clouding of the eye's lens causing gradual blurring, glare, and faded colors — strongly linked to oxidative damage over decades.",
+    "causes": [
+      "Aging (lens proteins oxidize)",
+      "UV light exposure and smoking",
+      "Diabetes and steroid use",
+      "Low antioxidant nutrition"
+    ],
+    "harmfulEffects": [
+      "Progressive visual impairment",
+      "Eventual blindness if untreated (surgery is curative)"
+    ],
+    "helpfulFoods": [
+      "Vitamin C-rich: citrus, peppers, strawberries",
+      "Leafy greens — lutein/zeaxanthin",
+      "Nuts and seeds — vitamin E",
+      "Carrots and sweet potato — beta-carotene"
+    ],
+    "helpfulSupplements": [
+      "Multivitamin with vitamin C, E, lutein — associated with lower cataract risk in cohorts",
+      "Vitamin C — lens concentration depends on diet"
+    ],
+    "sources": [
+      "WHO — World report on vision",
+      "NIH NEI — Cataracts overview"
+    ]
+  },
+  {
+    "id": "dry-eye",
+    "name": "Dry eye syndrome",
+    "organId": "eyes",
+    "category": "Eye condition",
+    "description": "Insufficient or poor-quality tears causing grittiness, burning, redness, and fatigue — worse with screens, dry air, and contact lenses.",
+    "causes": [
+      "Prolonged screen time (reduced blinking)",
+      "Meibomian gland dysfunction and aging",
+      "Certain medications (antihistamines, antidepressants)",
+      "Low omega-3 intake"
+    ],
+    "harmfulEffects": [
+      "Chronic discomfort and light sensitivity",
+      "Corneal surface damage in severe cases"
+    ],
+    "helpfulFoods": [
+      "Oily fish — omega-3s improve tear quality",
+      "Flaxseed and walnuts — plant ALA",
+      "Water — overall hydration"
+    ],
+    "helpfulSupplements": [
+      "Omega-3 EPA/DHA — improved signs and symptoms in trials (CHED/omega-3 DED studies)",
+      "Vitamin A — deficiency causes severe dryness (rare in well-fed populations)"
+    ],
+    "sources": [
+      "TFOS DEWS II report — Dry Eye Workshop",
+      "NIH ODS — Omega-3 fact sheet"
+    ]
+  },
+  {
+    "id": "common-cold",
+    "name": "Common cold",
+    "organId": "immune",
+    "category": "Viral infection",
+    "description": "Viral upper-respiratory infection (mostly rhinoviruses) with runny nose, sore throat, sneezing, and cough — usually resolving within 7-10 days.",
+    "causes": [
+      "Virus exposure (close contact, contaminated surfaces)",
+      "Weakened defenses: poor sleep, stress, low vitamin D",
+      "Cold/dry seasons favoring virus survival"
+    ],
+    "harmfulEffects": [
+      "Sinusitis or ear infections (secondary)",
+      "Asthma/COPD flare-ups"
+    ],
+    "helpfulFoods": [
+      "Chicken soup (homemade) — hydration, mild anti-inflammatory effect",
+      "Citrus, kiwi, peppers — vitamin C",
+      "Garlic — allicin; a large trial reduced cold frequency",
+      "Ginger and honey — throat soothing (honey not for infants under 1)",
+      "Yogurt and fermented foods — microbiome support"
+    ],
+    "helpfulSupplements": [
+      "Vitamin C — regular use slightly shortens duration",
+      "Zinc lozenges — within 24h of onset, may shorten duration",
+      "Vitamin D — deficiency correction reduces respiratory infections",
+      "Elderberry — modest evidence for symptom relief"
+    ],
+    "sources": [
+      "Cochrane — Vitamin C and zinc for the common cold",
+      "NIH ODS — Vitamin C, Zinc, Vitamin D fact sheets"
+    ]
+  },
+  {
+    "id": "hypothyroidism",
+    "name": "Hypothyroidism (underactive thyroid)",
+    "organId": "thyroid",
+    "category": "Endocrine condition",
+    "description": "The thyroid produces too little hormone, slowing metabolism — causing tiredness, weight gain, cold intolerance, dry skin, and low mood.",
+    "causes": [
+      "Autoimmune thyroiditis (Hashimoto's) — most common",
+      "Iodine deficiency (world's leading preventable cause)",
+      "Thyroid surgery or radioactive iodine treatment",
+      "Certain medications (lithium, amiodarone)"
+    ],
+    "harmfulEffects": [
+      "Fatigue, weight gain, high cholesterol",
+      "Goiter; in pregnancy, risks to fetal brain development",
+      "Severe untreated cases: myxedema (rare, dangerous)"
+    ],
+    "helpfulFoods": [
+      "Iodized salt; seaweed — iodine (balance matters)",
+      "Brazil nuts — selenium for T4→T3 conversion",
+      "Fish, eggs, dairy — iodine + protein",
+      "Zinc sources: shellfish, legumes"
+    ],
+    "helpfulSupplements": [
+      "Selenium — 100-200 mcg reduced autoimmune antibody levels in trials",
+      "Vitamin D — often low in Hashimoto's",
+      "Iodine — only if deficient; excess worsens autoimmune thyroid disease",
+      "Note: take levothyroxine 4h apart from calcium/iron supplements"
+    ],
+    "sources": [
+      "WHO — Iodine deficiency fact sheets",
+      "NIH ODS — Iodine, Selenium fact sheets",
+      "ATA — American Thyroid Association patient resources"
+    ]
+  }
+]
