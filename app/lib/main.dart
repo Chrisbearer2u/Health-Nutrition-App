@@ -35,4 +35,5 @@ class NutriGuideApp extends StatelessWidget {
         home: const HomeScreen(),
       ),
     );
+  }
 }

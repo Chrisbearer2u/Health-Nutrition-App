@@ -65,7 +65,7 @@ class BrowseScreen extends StatelessWidget {
                               Navigator.of(context).push(MaterialPageRoute(
                                 builder: (_) => item is Organ
                                     ? OrganDetailScreen(organ: item)
-                                    : DiseaseDetailScreen(disease: item),
+                                    : DiseaseDetailScreen(disease: item as Disease),
                               ));
                             },
                           ));

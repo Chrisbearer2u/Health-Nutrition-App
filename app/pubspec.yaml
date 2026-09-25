@@ -15,7 +15,7 @@ dependencies:
   # Networking — talks to our backend proxy (never to the LLM API directly).
   http: ^1.2.2
   # Lightweight state management.
-  provider: ^6.1.2
+  provider: ^6.1.5+1
   # Renders the chatbot's Markdown responses.
   flutter_markdown: ^0.7.4+3
   # Persists chat history locally on the device.
