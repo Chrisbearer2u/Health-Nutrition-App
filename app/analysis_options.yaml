@@ -10,3 +10,5 @@ analyzer:
   exclude:
     - "build/**"
     - android/**
+    - windows/**
+    - web/**

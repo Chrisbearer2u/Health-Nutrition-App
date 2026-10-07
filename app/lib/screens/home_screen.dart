@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
-import '../state/chat_controller.dart';
 import 'browse_screen.dart';
 import 'chat_screen.dart';
 
@@ -19,10 +17,6 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    // The greeting must be presented when the chat is first opened.
-    if (_index == 1) {
-      context.read<ChatController>().ensureGreeting();
-    }
     return Scaffold(
       body: IndexedStack(
         index: _index,

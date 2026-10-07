@@ -17,9 +17,8 @@ class NutriGuideApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        Provider<ChatController>(
+        ChangeNotifierProvider<ChatController>(
           create: (_) => ChatController(),
-          dispose: (_, c) => c.dispose(),
         ),
         FutureProvider<KnowledgeRepository>(
           create: (_) => KnowledgeRepository.load(),

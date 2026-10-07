@@ -1,30 +1,41 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility in the flutter_test package. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-
 import 'package:nutriguide/main.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
+  testWidgets('NutriGuideApp loads home screen with bottom navigation',
+      (WidgetTester tester) async {
     await tester.pumpWidget(const NutriGuideApp());
+    await tester.pumpAndSettle();
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+    // Verify main app bar title
+    expect(find.text('NutriGuide'), findsOneWidget);
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
+    // Verify NavigationBar items
+    expect(find.text('Browse'), findsOneWidget);
+    expect(find.text('Assistant'), findsOneWidget);
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+    // Verify Compact Disclaimer Banner is present
+    expect(
+      find.text('Informational only — not medical advice.'),
+      findsOneWidget,
+    );
+  });
+
+  testWidgets('NutriGuideApp switches tabs on navigation bar tap',
+      (WidgetTester tester) async {
+    await tester.pumpWidget(const NutriGuideApp());
+    await tester.pumpAndSettle();
+
+    // Tap on 'Assistant' tab
+    final assistantTab = find.text('Assistant');
+    expect(assistantTab, findsOneWidget);
+    await tester.tap(assistantTab);
+    await tester.pumpAndSettle();
+
+    // Verify Assistant greeting text
+    expect(
+      find.textContaining('Ask me what you want to know about any particular human disease'),
+      findsOneWidget,
+    );
   });
 }
