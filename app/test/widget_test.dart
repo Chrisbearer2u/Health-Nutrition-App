@@ -38,4 +38,21 @@ void main() {
       findsOneWidget,
     );
   });
+
+  testWidgets('NutriGuideApp theme toggle button switches dark and light mode',
+      (WidgetTester tester) async {
+    await tester.pumpWidget(const NutriGuideApp());
+    await tester.pumpAndSettle();
+
+    // Find theme toggle button icon
+    final themeButton = find.byTooltip('Switch to Dark Mode');
+    expect(themeButton, findsWidgets);
+
+    // Tap theme toggle button
+    await tester.tap(themeButton.first);
+    await tester.pumpAndSettle();
+
+    // Verify tooltip updated to Light Mode switch
+    expect(find.byTooltip('Switch to Light Mode'), findsWidgets);
+  });
 }

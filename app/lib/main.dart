@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import 'data/knowledge_repository.dart';
 import 'screens/home_screen.dart';
 import 'state/chat_controller.dart';
+import 'state/theme_controller.dart';
 import 'theme.dart';
 
 void main() {
@@ -17,6 +18,9 @@ class NutriGuideApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
+        ChangeNotifierProvider<ThemeController>(
+          create: (_) => ThemeController(),
+        ),
         ChangeNotifierProvider<ChatController>(
           create: (_) => ChatController(),
         ),
@@ -26,12 +30,17 @@ class NutriGuideApp extends StatelessWidget {
           catchError: (_, __) => KnowledgeRepository.empty,
         ),
       ],
-      child: MaterialApp(
-        title: 'NutriGuide',
-        debugShowCheckedModeBanner: false,
-        theme: AppTheme.light(),
-        darkTheme: AppTheme.dark(),
-        home: const HomeScreen(),
+      child: Consumer<ThemeController>(
+        builder: (context, themeController, child) {
+          return MaterialApp(
+            title: 'NutriGuide',
+            debugShowCheckedModeBanner: false,
+            theme: AppTheme.light(),
+            darkTheme: AppTheme.dark(),
+            themeMode: themeController.themeMode,
+            home: const HomeScreen(),
+          );
+        },
       ),
     );
   }
