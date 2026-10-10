@@ -3,8 +3,7 @@ import java.io.FileInputStream
 
 plugins {
     id("com.android.application")
-    id("kotlin-android")
-    // The Flutter Gradle plugin must be applied after android/kotlin plugins.
+    // The Flutter Gradle plugin must be applied after android plugins.
     id("dev.flutter.flutter-gradle-plugin")
 }
 

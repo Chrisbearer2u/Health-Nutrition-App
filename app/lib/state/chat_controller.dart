@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/foundation.dart';
 
+import '../data/knowledge_repository.dart';
 import '../models/models.dart';
 import '../services/chat_service.dart';
 
@@ -44,7 +45,7 @@ class ChatController extends ChangeNotifier {
       // The greeting is display-only: don't send it to the model.
       final history = _messages
           .skip(1) // drop greeting
-          .take(_messages.length - 2) // drop the placeholder we just added
+          .take(_messages.length - 2) // drop the placeholder
           .toList(growable: false);
 
       await _service.sendMessage(
@@ -56,18 +57,24 @@ class ChatController extends ChangeNotifier {
           notifyListeners();
         },
       );
-    } on ApiException catch (e) {
-      _error = e.statusCode == 429
-          ? 'You are sending messages too quickly. Please wait a moment and '
-              'try again.'
-          : 'Something went wrong reaching the assistant. '
-              'Please check your connection and try again.';
-      // Remove the empty placeholder bubble on failure.
-      if (_messages.last.isUser == false && _messages.last.content.isEmpty) {
-        _messages.removeLast();
-      }
+    } catch (e) {
       if (kDebugMode) {
-        print('ChatService error: $e');
+        print('Backend proxy unavailable ($e), falling back to on-device Health Assistant.');
+      }
+      // On-device fallback using KnowledgeRepository
+      final repo = await KnowledgeRepository.load();
+      final answer = repo.generateAnswer(prompt);
+
+      // Stream the response word by word for a natural streaming experience
+      final words = answer.split(' ');
+      _messages.last = ChatMessage.assistant('');
+      for (var i = 0; i < words.length; i++) {
+        final space = i == 0 ? '' : ' ';
+        _messages.last = ChatMessage.assistant(
+          _messages.last.content + space + words[i],
+        );
+        notifyListeners();
+        await Future<void>.delayed(const Duration(milliseconds: 12));
       }
     } finally {
       _isStreaming = false;

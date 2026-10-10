@@ -21,6 +21,8 @@ class MockChatService implements ChatService {
 }
 
 void main() {
+  TestWidgetsFlutterBinding.ensureInitialized();
+
   group('ChatController', () {
     late MockChatService mockService;
     late ChatController controller;
@@ -38,7 +40,7 @@ void main() {
       expect(controller.messages.first.content, equals(kAssistantGreeting));
     });
 
-    test('send streams response correctly', () async {
+    test('send streams response correctly when online', () async {
       controller.ensureGreeting();
       final future = controller.send('What foods support the liver?');
 
@@ -52,14 +54,18 @@ void main() {
       expect(controller.messages[2].content, equals('Mock assistant answer'));
     });
 
-    test('send handles ApiException gracefully', () async {
+    test('send falls back seamlessly to on-device knowledge base when offline/error', () async {
       mockService.shouldThrow = true;
       controller.ensureGreeting();
 
-      await controller.send('Test error handling');
+      await controller.send('Tell me about Type 2 Diabetes');
 
-      expect(controller.error, isNotNull);
-      expect(controller.error, contains('Something went wrong'));
+      expect(controller.isStreaming, isFalse);
+      expect(controller.error, isNull);
+      expect(controller.messages.length, equals(3));
+      expect(controller.messages.last.content, contains('Type 2 diabetes'));
+      expect(controller.messages.last.content, contains('Causes'));
+      expect(controller.messages.last.content, contains('Harmful Effects'));
     });
 
     test('reset clears conversation and restores greeting', () {
