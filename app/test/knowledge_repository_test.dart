@@ -37,5 +37,15 @@ void main() {
       final foods = repo.foodsForOrgan('heart');
       expect(foods, isList);
     });
+
+    test('generateAnswer produces detailed clinical response for local disease', () async {
+      final repo = await KnowledgeRepository.load();
+      final answer = await repo.generateAnswer('Type 2 Diabetes');
+
+      expect(answer, contains('Type 2 diabetes'));
+      expect(answer, contains('Causes & Risk Factors'));
+      expect(answer, contains('Harmful Effects if Unmanaged'));
+      expect(answer, contains('Recommended Natural Foods'));
+    });
   });
 }

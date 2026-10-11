@@ -3,9 +3,10 @@ import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
 
 import '../models/models.dart';
+import '../services/online_medical_service.dart';
 
 /// Loads the bundled knowledge base (organs, diseases, foods) from assets
-/// and provides lookup/search APIs, plus on-device health answer generation.
+/// and provides lookup/search APIs, plus online & on-device health answer generation.
 class KnowledgeRepository {
   KnowledgeRepository._(
     this._organs,
@@ -78,14 +79,14 @@ class KnowledgeRepository {
     ];
   }
 
-  /// Generates a structured health and nutrition answer from the local database.
-  String generateAnswer(String query) {
+  /// Generates a structured health and nutrition answer from local database or online medical repositories.
+  Future<String> generateAnswer(String query, {OnlineMedicalService? onlineServiceOverride}) async {
     final q = query.trim().toLowerCase();
     if (q.isEmpty) {
       return 'Please ask a question about any disease, organ system, food, or supplement.';
     }
 
-    // 1. Match disease
+    // 1. Match local disease
     final matchedDiseases = _diseases.where((d) {
       final nameLower = d.name.toLowerCase();
       final idLower = d.id.toLowerCase();
@@ -142,7 +143,7 @@ class KnowledgeRepository {
       return buffer.toString().trim();
     }
 
-    // 2. Match organ
+    // 2. Match local organ
     final matchedOrgans = _organs.where((o) {
       final nameLower = o.name.toLowerCase();
       final sysLower = o.system.toLowerCase();
@@ -181,7 +182,7 @@ class KnowledgeRepository {
       return buffer.toString().trim();
     }
 
-    // 3. Match foods or supplements
+    // 3. Match local foods or supplements
     final matchedFoods = _foods.where((f) {
       final nameLower = f.name.toLowerCase();
       return nameLower.contains(q) || q.contains(nameLower);
@@ -200,7 +201,7 @@ class KnowledgeRepository {
       return buffer.toString().trim();
     }
 
-    // 4. Keyword search across descriptions, causes, and foods
+    // 4. Keyword search across local database
     final keywordDiseases = _diseases.where((d) {
       return d.description.toLowerCase().contains(q) ||
           d.causes.any((c) => c.toLowerCase().contains(q)) ||
@@ -221,16 +222,23 @@ class KnowledgeRepository {
       return buffer.toString().trim();
     }
 
-    // 5. General default response
+    // 5. Query Online Medical Repository over the internet for any human disease not in local JSON
+    final onlineService = onlineServiceOverride ?? OnlineMedicalService();
+    final onlineResult = await onlineService.fetchDiseaseInfo(query);
+    if (onlineResult != null && onlineResult.isNotEmpty) {
+      return onlineResult;
+    }
+
+    // 6. General default response
     return '### 🌿 NutriGuide Health & Nutrition Assistant\n\n'
         'I am ready to help you with information on human diseases, their causes, harmful effects, and supportive natural foods or supplements.\n\n'
         '**Explore topics you can ask about:**\n'
         '• **Cardiovascular:** Hypertension, Atherosclerosis, Coronary Heart Disease\n'
-        '• **Brain & Nervous System:** Depression, Alzheimer\'s Disease, Migraine\n'
+        '• **Brain & Nervous System:** Depression, Alzheimer\'s Disease, Migraine, Parkinson\'s\n'
         '• **Metabolic & Organs:** Type 2 Diabetes, Non-Alcoholic Fatty Liver Disease, Chronic Kidney Disease, Kidney Stones\n'
         '• **Respiratory & Digestive:** Asthma, COPD, GERD, Peptic Ulcers, IBS, Constipation\n'
         '• **Bones, Joints & Skin:** Osteoporosis, Arthritis, Gout, Acne, Eczema\n'
         '• **Immune, Eyes & Thyroid:** Common Cold, Macular Degeneration, Cataracts, Dry Eye, Hypothyroidism\n\n'
-        'Try asking a question like *"Tell me about Type 2 Diabetes"* or *"What foods support the liver?"*';
+        'Try asking a question like *"Tell me about Parkinson\'s disease"* or *"What foods support the liver?"*';
   }
 }

@@ -61,9 +61,9 @@ class ChatController extends ChangeNotifier {
       if (kDebugMode) {
         print('Backend proxy unavailable ($e), falling back to on-device Health Assistant.');
       }
-      // On-device fallback using KnowledgeRepository
+      // On-device & online fallback using KnowledgeRepository
       final repo = await KnowledgeRepository.load();
-      final answer = repo.generateAnswer(prompt);
+      final answer = await repo.generateAnswer(prompt);
 
       // Stream the response word by word for a natural streaming experience
       final words = answer.split(' ');

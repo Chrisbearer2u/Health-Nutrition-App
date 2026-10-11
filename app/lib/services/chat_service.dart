@@ -7,10 +7,11 @@ import '../models/models.dart';
 
 /// The exact greeting the assistant shows when the chat is first opened.
 const String kAssistantGreeting =
-    'Ask me what you want to know about any particular human disease and I '
-    'will tell you everything about the disease, its cause, its harmful '
-    'effects, and the most appropriate world-known natural food or food '
-    'supplement that can cure or suppress it harmful effects.';
+    'Welcome to NutriGuide! 🌿\n\n'
+    'I am your AI Health & Nutrition Assistant. Ask me about any health condition, disease, or organ system, '
+    'and I will guide you with details on its causes, risk factors, harmful effects, and '
+    'the most effective natural foods and supplements studied to support your wellness.\n\n'
+    'How can I help you today?';
 
 /// Backend base URL.
 const String _defaultBaseUrl = 'http://10.0.2.2:8080';

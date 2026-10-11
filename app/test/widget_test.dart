@@ -34,7 +34,7 @@ void main() {
 
     // Verify Assistant greeting text
     expect(
-      find.textContaining('Ask me what you want to know about any particular human disease'),
+      find.textContaining('Welcome to NutriGuide!'),
       findsOneWidget,
     );
   });
